@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>phonebook-api</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Phonebook app for Transferwise</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -52,6 +52,7 @@
             <artifactId>lombok</artifactId>
             <version>1.16.18</version>
         </dependency>
+
 
         <dependency>
             <groupId>org.hashids</groupId>
