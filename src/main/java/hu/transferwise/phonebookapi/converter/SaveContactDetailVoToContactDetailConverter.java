@@ -1,18 +1,17 @@
 package hu.transferwise.phonebookapi.converter;
 
 
-import hu.transferwise.phonebookapi.controller.vo.ContactDetailVO;
+import hu.transferwise.phonebookapi.controller.vo.SaveContactDetailVO;
 import hu.transferwise.phonebookapi.entity.ContactDetail;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ContactDetailVoToContactDetailConverter implements Converter<ContactDetailVO, ContactDetail> {
+public class SaveContactDetailVoToContactDetailConverter implements Converter<SaveContactDetailVO, ContactDetail> {
 
     @Override
-    public ContactDetail convert(ContactDetailVO source) {
+    public ContactDetail convert(SaveContactDetailVO source) {
         return ContactDetail.builder()
-                .id(source.getId())
                 .name(source.getName())
                 .company(source.getCompany())
                 .email(source.getEmail())

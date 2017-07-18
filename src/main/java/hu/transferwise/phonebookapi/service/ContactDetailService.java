@@ -24,4 +24,9 @@ public class ContactDetailService {
     public Page<ContactDetail> findContactDetails(String query, Pageable pageable){
         return contactDetailDAO.findContactDetails(query, pageable);
     }
+
+    public void delete(Long contactId){
+        contactDetailDAO.delete(contactId);
+    }
+
 }

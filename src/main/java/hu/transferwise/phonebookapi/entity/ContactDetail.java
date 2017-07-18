@@ -1,9 +1,6 @@
 package hu.transferwise.phonebookapi.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.Entity;
@@ -15,6 +12,7 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
+@Setter
 @Builder
 @Entity
 public class ContactDetail {
