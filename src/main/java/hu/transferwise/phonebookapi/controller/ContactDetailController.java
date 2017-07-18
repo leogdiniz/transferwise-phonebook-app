@@ -89,6 +89,6 @@ public class ContactDetailController {
         contactDetail.setJobTitle(contactDetailVO.getJobTitle());
         contactDetail.setEmail(contactDetailVO.getEmail());
         contactDetail.setNotes(contactDetailVO.getNotes());
-        contactDetail.setPhone(contactDetail.getPhone());
+        contactDetail.setPhone(contactDetailVO.getPhone());
     }
 }
