@@ -26,7 +26,8 @@ public class H2InitialLoader implements ApplicationRunner{
         ContactDetail jonSnow = ContactDetail.builder()
                 .name("Jon Snow")
                 .email("snow@gmail.com")
-                .jobTitle("Engineer")
+                .company("House of Stark")
+                .jobTitle("King of the north")
                 .notes("The king of the north")
                 .build();
 
